@@ -18,6 +18,7 @@ public class Team {
 
     public Team(int id) {
         this.doctors = new ArrayList<>();
+        
         this.patients = new ArrayList<>();
     }
 }
