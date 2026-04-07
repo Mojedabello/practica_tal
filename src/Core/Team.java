@@ -18,7 +18,11 @@ public class Team {
 
     public Team(int id) {
         this.doctors = new ArrayList<>();
-        
+        this.teamLeader= null;
         this.patients = new ArrayList<>();
+    }
+
+    void setTeamLeader(ConsultantDoctor teamLeader) {
+       this.teamLeader=teamLeader;
     }
 }

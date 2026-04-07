@@ -13,10 +13,15 @@ import java.util.ArrayList;
 public class ConsultantDoctor extends Doctor {
     
     private Team leaderOdTeam;
-
-    public ConsultantDoctor(int ID) {
+    
+    public ConsultantDoctor(int ID,Team team) {
         super(ID);
+        this.leaderOdTeam=team;
+        
+        this.leaderOdTeam.setTeamLeader(this);
     }
+
+    
     
     
     

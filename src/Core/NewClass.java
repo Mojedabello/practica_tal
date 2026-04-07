@@ -9,5 +9,5 @@ package Core;
  * @author Manuel Ojeda
  */
 public class NewClass {
-    
+  
 }
