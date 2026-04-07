@@ -4,11 +4,16 @@
  */
 package Core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Manuel Ojeda
  */
-public class Hospital {
-    private ArrayList<Team> teams;
-    private ArrayList<Ward> wards;
+public class JuniorDoctor extends Doctor {
+    
+    public JuniorDoctor(int ID, Object team, ArrayList<Object> appointmens, ArrayList<Object> patients) {
+        super(ID, team, appointmens, patients);
+    }
+    
 }
