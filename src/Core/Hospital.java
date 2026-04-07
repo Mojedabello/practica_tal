@@ -28,8 +28,26 @@ public class Hospital {
         teams.add(team);
     }
 
+    public void addWard(int i) {
+      Ward ward = new Ward(i);
+      wards.add(ward);
+    }
+    public Ward getWard(int index){
+        return wards.get(index);
+    }
+     public Patient getPatient(int index){
+         Patient patient = new Patient(index);
+         return patient;
+    }
+
+    public void assignPatientDoctor(Ward patient, int i) {
+     
+    }
+
+    public void assignAppoiment(Ward patient, int i) {
+
+    }
    
     
-    
-    
+
 }

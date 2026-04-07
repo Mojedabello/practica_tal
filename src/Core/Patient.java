@@ -17,7 +17,7 @@ public class Patient {
     private ArrayList<Appointment> appointments;
     private ArrayList<Doctor> doctors;
 
-    public Patient() {
+    public Patient(int id) {
         this.appointments = new ArrayList<>();
         this.doctors = new ArrayList<>();
     }
