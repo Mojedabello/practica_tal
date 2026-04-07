@@ -14,7 +14,7 @@ public class Ward {
     private int id;
     private ArrayList<Patient> patients;
 
-    public Ward() {
+    public Ward(int id) {
         this.patients = new ArrayList<>();
     }
     

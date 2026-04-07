@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class Team {
     private int id;
-    private Team teamLeader;
+    private ConsultantDoctor teamLeader;
     private ArrayList<Doctor> doctors;
     private ArrayList<Patient> patients;
 
