@@ -14,8 +14,8 @@ public class ConsultantDoctor extends Doctor {
     
     private Team leaderOdTeam;
 
-    public ConsultantDoctor(int ID, Team team, ArrayList<Appointment> appointmens, ArrayList<Patient> patients) {
-        super(ID, team, appointmens, patients);
+    public ConsultantDoctor(int ID) {
+        super(ID);
     }
     
     

@@ -17,9 +17,15 @@ public class Hospital {
     private ArrayList<Team> teams;
     private ArrayList<Ward> wards;
 
-    public Hospital(ArrayList<Team> teams, ArrayList<Ward> wards) {
+    public Hospital() {
         this.teams = new ArrayList<>();
         this.wards = new ArrayList<>();
+    }
+
+    public void addTeam(int teamid, int consultantdoctorid) {
+        Team team = new Team(teamid);
+        ConsultantDoctor consultantdoctor = new ConsultantDoctor(teamid + consultantdoctorid);
+        teams.add(team);
     }
 
    

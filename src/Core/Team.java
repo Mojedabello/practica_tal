@@ -4,10 +4,20 @@
  */
 package Core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author luddy
  */
 public class Team {
-    
+    private int id;
+    private Team teamLeader;
+    private ArrayList<Doctor> doctors;
+    private ArrayList<Patient> patients;
+
+    public Team(int id) {
+        this.doctors = new ArrayList<>();
+        this.patients = new ArrayList<>();
+    }
 }

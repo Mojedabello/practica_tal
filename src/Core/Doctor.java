@@ -22,6 +22,10 @@ public abstract class Doctor {
         this.appointmens = new ArrayList<>();
         this.patients = new ArrayList<>();
     }
+
+    public Doctor(int ID) {
+        this.ID = ID;
+    }
     
     
 }

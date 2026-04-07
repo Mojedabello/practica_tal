@@ -4,10 +4,18 @@
  */
 package Core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author luddy
  */
 public class Ward {
+    private int id;
+    private ArrayList<Patient> patients;
+
+    public Ward() {
+        this.patients = new ArrayList<>();
+    }
     
 }

@@ -9,5 +9,6 @@ package Core;
  * @author luddy
  */
 public class Appointment {
-    
+    private Doctor doctor;
+    private Patient patient;
 }
