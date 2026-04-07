@@ -20,4 +20,12 @@ public class Team {
         this.doctors = new ArrayList<>();
         this.patients = new ArrayList<>();
     }
+
+    public ArrayList<Patient> getPatients() {
+        return patients;
+    }
+    public Patient addPatients(Patient patient){
+        patients.add(patient);
+        return patient;
+    }
 }

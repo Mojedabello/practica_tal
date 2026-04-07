@@ -40,8 +40,18 @@ public class Hospital {
          return patient;
     }
 
-    public void assignPatientDoctor(Ward patient, int i) {
-     
+    public ArrayList<Team> getTeams() {
+        return teams;
+    }
+
+    public void assignPatientDoctor(Patient patient, int doctorid) {
+        int teamId = doctorid + this.getTeams().getPatients();
+        Doctor doctor = new Doctor(this.patient.getDoctor(doctorid));
+        Patient patient = new patient(doct);
+        patient.add(doctor);
+        doctor.add(patient);
+       
+    
     }
 
     public void assignAppoiment(Ward patient, int i) {
@@ -55,6 +65,10 @@ public class Hospital {
     public Team getTeam(int index) {
         return this.teams.get(index);
     
+    }
+
+    public void addPatient(Ward ward, Team team, int id) {
+     Patient patient = new Patient(ward, team, id);
     }
     
     

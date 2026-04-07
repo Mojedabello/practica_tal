@@ -21,10 +21,15 @@ public abstract class Doctor {
         this.team = team;
         this.appointmens = new ArrayList<>();
         this.patients = new ArrayList<>();
+       
     }
 
     public Doctor(int ID) {
         this.ID = ID;
+    }
+
+    public void AddPatients(Patient patient) {
+        patients.add(patient);
     }
     
     
