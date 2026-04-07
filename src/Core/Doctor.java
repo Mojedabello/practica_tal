@@ -13,10 +13,10 @@ import java.util.ArrayList;
 public abstract class Doctor {
     protected int ID;
     protected Team team;
-    protected ArrayList<Appoitnmen> appointmens;
+    protected ArrayList<Appointment> appointmens;
     protected ArrayList<Patient> patients;
 
-    public Doctor(int ID, Team team, ArrayList<Appoitnmen> appointmens, ArrayList<Patient> patients) {
+    public Doctor(int ID, Team team, ArrayList<Appointment> appointmens, ArrayList<Patient> patients) {
         this.ID = ID;
         this.team = team;
         this.appointmens = new ArrayList<>();

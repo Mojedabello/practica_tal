@@ -12,8 +12,10 @@ import java.util.ArrayList;
  */
 public class JuniorDoctor extends Doctor {
     
-    public JuniorDoctor(int ID, Object team, ArrayList<Object> appointmens, ArrayList<Object> patients) {
+    public JuniorDoctor(int ID, Team team, ArrayList<Appointment> appointmens, ArrayList<Patient> patients) {
         super(ID, team, appointmens, patients);
     }
+    
+    
     
 }
