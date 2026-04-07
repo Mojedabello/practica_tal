@@ -24,12 +24,20 @@ public abstract class Doctor {
        
     }
 
+    public int getID() {
+        return ID;
+    }
+
     public Doctor(int ID) {
         this.ID = ID;
     }
 
     public void AddPatients(Patient patient) {
         patients.add(patient);
+    }
+
+    void add(Patient patient) {
+      patients.add(patient);
     }
     
     

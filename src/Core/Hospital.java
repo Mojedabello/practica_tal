@@ -36,8 +36,14 @@ public class Hospital {
         return wards.get(index);
     }
      public Patient getPatient(int index){
-         Patient patient = new Patient(index);
-         return patient;
+    for(Team teams: this.teams){
+       for(Patient patients: teams.getPatients()){
+           if(index == patients.getId()){
+               return patients;
+           }
+       }
+   }
+   return null;
     }
 
     public ArrayList<Team> getTeams() {
@@ -45,15 +51,22 @@ public class Hospital {
     }
 
     public void assignPatientDoctor(Patient patient, int doctorid) {
-        int teamId = doctorid + this.getTeams().getPatients();
-        Doctor doctor = new Doctor(this.patient.getDoctor(doctorid));
-        Patient patient = new patient(doct);
+        int teamId = doctorid + patient.getTeam().getId();
+        Doctor doctor = this.getDoctor(teamId);
         patient.add(doctor);
         doctor.add(patient);
        
-    
     }
-
+public Doctor getDoctor(int teamId){
+   for(Team teams: this.teams){
+       for(Doctor doctors: teams.getDoctors()){
+           if(teamId == doctors.getID()){
+               return doctors;
+           }
+       }
+   }
+   return null;
+}
     public void assignAppoiment(Ward patient, int i) {
 
     }
