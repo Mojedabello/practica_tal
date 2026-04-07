@@ -16,7 +16,7 @@ public class Hospital {
     
     private ArrayList<Team> teams;
     private ArrayList<Ward> wards;
-
+    
     public Hospital() {
         this.teams = new ArrayList<>();
         this.wards = new ArrayList<>();
@@ -48,6 +48,14 @@ public class Hospital {
 
     }
    
-    
+    public void addJuniorDoctor(Team team,int id){
+        JuniorDoctor juniorDoctor = new JuniorDoctor(id,team); 
+    }
 
+    public Team getTeam(int index) {
+        return this.teams.get(index);
+    
+    }
+    
+    
 }
