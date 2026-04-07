@@ -26,6 +26,15 @@ public class Team {
     }
     public Patient addPatients(Patient patient){
         patients.add(patient);
+        patient.setTeam(this);
         return patient;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public ArrayList<Doctor> getDoctors() {
+        return doctors;
     }
 }

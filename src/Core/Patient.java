@@ -32,7 +32,19 @@ public class Patient {
         return doctors.get(index);
     }
 
+    public Team getTeam() {
+        return team;
+    }
+
+    public int getId() {
+        return id;
+    }
+
     public void setTeam(Team team) {
         this.team = team;
+    }
+
+    void add(Doctor doctor) {
+     doctors.add(doctor);
     }
 }
